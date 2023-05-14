@@ -22,7 +22,7 @@
         <!-- NavBar -->
         <div class="row">
             <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-                <a class="navbar-brand text-light mx-5">
+                <a class="navbar-brand text-light mx-5" href="index.html">
                     <img src="./images/codoacodo.png" alt="Codo a Codo" width="110">
                     Conf Bs As
                 </a>
@@ -47,7 +47,7 @@
                         <a class="nav-link coviertete-orador" href="#">Convierteté en orador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link comprar text-success" href="#">Comprar tickets</a>
+                        <a class="nav-link comprar text-success" href="comprar-tickets.html">Comprar tickets</a>
                     </li>
                 </ul>
                 </div>
@@ -72,8 +72,7 @@
                     <h1>Conf Bs As</h1>
                     <h6 class="lh-base">Bs As llega por primera vez a Argentina. Un evento para compratir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</h6>
                     <button type="button" class="btn btn-outline-light mt-2 mx-2">Quiero ser orador</button>
-                    <button type="button" class="btn mt-2"
-                        style="background-color: #29a744; color: white;">Comprar tickets</button>
+                    <a href="comprar-tickets.html" class="btn mt-2" style="background-color: #29a744; color: white;">Comprar tickets</a>
                 </div>
                 
                 <div class="carousel-item active" style="background-image:url('./images/ba1.jpg')">
@@ -173,6 +172,7 @@
 
 
         <!-- Formulario de contacto -->
+        <form class="needs-validation">
         <div class="d-flex justify-content-center">
             <div class="row my-4 col-12 col-lg-6">
                 <div class="col-12 mb-2">
@@ -180,28 +180,35 @@
                     <h2 class="d-flex justify-content-center">ORADOR</h2>
                     <h6 class="d-flex justify-content-center text-center">Anótate como orador para dar una a charla ignite. Cuéntanos de qué quieres hablar!</h6>
                 </div>
+
+
                 <div class=" col-12 col-lg-6 my-2">
-                    <input type="Nombre" class="form-control" placeholder="Nombre">
+                    <input type="Nombre" class="form-control" placeholder="Nombre" id="NombreInput" required>
                 </div>
+
+
                 <div class="mb-3 col-12 col-lg-6 my-2">
-                    <input type="Apellido" class="form-control" placeholder="Apellido">
+                    <input type="Apellido" class="form-control" placeholder="Apellido" id="ApellidoInput" required>
                 </div>
+
+
                 <div class="mb-3 col-12 form-floating">
                     <textarea class="form-control" placeholder="¿Sobre qué quieres hablar?" id="floatingTextarea2"
-                        style="height: 100px"></textarea>
+                        style="height: 100px" required></textarea>
                     <label for="floatingTextarea2">
                         <h5 class="text-secondary mx-3">¿Sobre qué quieres hablar?</h5>
                     </label>
                     <p class="text-secondary">Recuerda incluir un título para tu charla.</p>
                 </div>
 
+
                 <div class="d-grid gap-2">
                     <button class="btn btn-lg mb-2 text-light" style="background-color:#96c93e;"
-                        type="button">Enviar</button>
+                        type="submit">Enviar</button>
                 </div>
             </div>
         </div>
-    </div>
+        </form>
 
     <!-- Footer -->
     <div id="fotter" class="row justify-content-center" style="background-color:#1c3846;">
